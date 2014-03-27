@@ -20,6 +20,7 @@ import           Control.Applicative  ((<$>))
 import           Data.Default
 import qualified Data.ByteString      as B
 import qualified Data.ByteString.Lazy as L
+import           Foreign.Storable     ( Storable )
 import           Prelude              hiding (length)
 import           System.IO            (withBinaryFile, IOMode(ReadMode), Handle)
 import           System.IO.Unsafe     (unsafePerformIO)
@@ -50,6 +51,7 @@ class ( SafePrimitive h
       , CryptoPrimitive h
       , Eq h
       , EndianStore h
+      , Storable (Cxt h)
       ) => Hash h where
   cxtToHash :: (Cxt h) -> h
 
