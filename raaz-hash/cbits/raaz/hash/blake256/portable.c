@@ -11,7 +11,7 @@ This is a part of raaz cryptographic library.
 #include <raaz/primitives/load.h>
 
 #define HASH_SIZE 8     
-#define BLOCK_SIZE 16   /* Size of a block */
+#define BLOCK_SIZE 16   /* Size of a block    */
 #define SALT_SIZE 4     /* Size of input salt */
 
 #define ROTATEL(x,n) ((x << n) | (x >> (32-n)))
@@ -23,10 +23,10 @@ typedef Word Block[BLOCK_SIZE];
 typedef Word Salt[SALT_SIZE];
 
 /* Defining 16 Constants */
-#define c0 0x243F6A88
+/*#define c0 0x243F6A88
 #define c1 0x85A308D3
 #define c2 0x13198A2E
-#define c3 0x03707344
+#define c3 0x03707344*/
 #define c4 0xA4093822
 #define c5 0x299F31D0
 #define c6 0x082EFA98
