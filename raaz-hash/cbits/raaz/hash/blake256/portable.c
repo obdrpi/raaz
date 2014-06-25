@@ -23,10 +23,10 @@ typedef Word Block[BLOCK_SIZE];
 typedef Word Salt[SALT_SIZE];
 
 /* Defining 16 Constants */
-/*#define c0 0x243F6A88
+#define c0 0x243F6A88
 #define c1 0x85A308D3
 #define c2 0x13198A2E
-#define c3 0x03707344*/
+#define c3 0x03707344
 #define c4 0xA4093822
 #define c5 0x299F31D0
 #define c6 0x082EFA98
