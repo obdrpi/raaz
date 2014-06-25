@@ -13,6 +13,7 @@ This is a part of raaz cryptographic library.
 #define HASH_SIZE 8     
 #define BLOCK_SIZE 16   /* Size of a block */
 #define SALT_SIZE 4     /* Size of input salt */
+
 #define ROTATEL(x,n) ((x << n) | (x >> (32-n)))
 #define ROTATER(x,n) ((x >> n) | (x << (32-n)))
 
